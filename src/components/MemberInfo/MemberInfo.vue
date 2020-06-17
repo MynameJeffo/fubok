@@ -16,10 +16,8 @@
             </tr>
             </thead>
             <tbody>
-                <tr v-for="post in posts" :key="post._id">
-                  <td>{{ post.title }}</td>
-                  <td>{{ post.body }}</td>
-                </tr>
+              <td></td>
+              <td></td>
             </tbody>
         </table>
   </div>
@@ -29,13 +27,14 @@
   export default {
       data() {
         return {
-          posts: []
+          // posts: []
         }
       },
       created() {
-      let uri = 'http://localhost:4000/posts';
+      let uri = 'https://www.instagram.com/web/search/topsearch/?context=blended&query=avengers';
       this.axios.get(uri).then(response => {
-        this.posts = response.data;
+        // this.posts = response.data;
+        console.log("memberinfo vue ->", response);
       });
     },
     methods: {

@@ -47,19 +47,19 @@
         }
       },
       created() {
-      let uri = 'http://localhost:4000/posts';
+      let uri = 'https://www.instagram.com/web/search/topsearch/?context=blended&query=avengers';
       this.axios.get(uri).then(response => {
         this.posts = response.data;
       });
     },
     methods: {
-      deletePost(id)
-      {
-        let uri = `http://localhost:4000/posts/delete/${id}`;
-        this.axios.delete(uri).then(response => {
-          this.posts.splice(this.posts.indexOf(id), 1);
-        });
-      },
+      // deletePost(id)
+      // {
+      //   let uri = `http://localhost:4000/posts/delete/${id}`;
+      //   this.axios.delete(uri).then(response => {
+      //     this.posts.splice(this.posts.indexOf(id), 1);
+      //   });
+      // },
       loginCallBack (user) {
       // gets user as an input
       // id, first_name, last_name, username,

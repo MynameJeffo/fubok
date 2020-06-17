@@ -38,6 +38,7 @@
     },
     beforeMount() {
       console.log("mount this shit")
+      console.log(process.env.MONGODB_URI);
     },
     created() {
       let uri = 'http://localhost:4000/posts';

@@ -5,6 +5,7 @@
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "heroku-postbuild": "cd api && npm install && npm start",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

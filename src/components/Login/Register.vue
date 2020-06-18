@@ -13,17 +13,17 @@
             <tr>
               <th>Title</th>
               <th>Body</th>
-              <th>Actions</th>
             </tr>
             </thead>
             <tbody>
                 <!-- <tr v-for="post in posts" :key="post._id">
                   <td>{{ post.title }}</td>
                   <td>{{ post.body }}</td>
-                  <!-- <td><router-link :to="{name: 'edit', params: { id: post._id }}" class="btn btn-primary">Edit</router-link></td> -->
+                  td><router-link :to="{name: 'edit', params: { id: post._id }}" class="btn btn-primary">Edit</router-link></td>
                   <td><button class="btn btn-danger" @click.prevent="deletePost(post._id)">Register</button></td>
-                  <!-- TODO: replace the line above with register function -->
-                </tr> -->
+                  TODO: replace the line above with register function -->
+               <td></td>
+               <td></td>
             </tbody>
         </table>
   </div>
